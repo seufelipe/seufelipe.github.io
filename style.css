@@ -11,7 +11,7 @@
 }
 
 html {
-	background: #111 url(https://s3.amazonaws.com/seufelipe/piedadi.jpg) no-repeat center center fixed;
+	background: #111 url(images/piedadi.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
