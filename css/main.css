@@ -11,19 +11,20 @@
 }
 
 html {
-	background: #111 url(images/piedadi.jpg) no-repeat center center fixed;
+	background: #111 url(../images/piedadi.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 	height: 100%;
 }
 
 body {
-	font-family: museo-slab-1, museo-slab-2, sans-serif;
-	font-weight: 500;
+	font: 500 16px/1 museo-slab-1, museo-slab-2, sans-serif;
 	height: 100%;
-	line-height: 1;
 	margin: 0;
 	padding: 0;
 }
