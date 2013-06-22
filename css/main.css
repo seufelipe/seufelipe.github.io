@@ -139,6 +139,20 @@ ul a {
 	clip: rect(1px, 1px, 1px, 1px);
 }
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
 .fn {
 	font-size: 1em;
 	margin: 0;
@@ -150,12 +164,6 @@ ul a {
 
 .works {
 	margin: 0 0 1.5rem 0;
-	overflow: hidden;
-}
-
-.works li {
-	float: left;
-	width: 50%;
 }
 
 .contact {
@@ -168,5 +176,16 @@ ul a {
 }
 
 .contact .social {
+	font-size: 1.13rem;
+	line-height: 1.33;
 	margin-right: 0;
+}
+
+@media only screen and (min-width: 920px) {
+
+	.works li {
+		float: left;
+		width: 50%;
+	}
+
 }
