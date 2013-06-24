@@ -4,15 +4,15 @@
   "css_use_suffix": false,
   "glyphs": [
     {
-      "uid": "bf882b30900da12fca090d9796bc3030",
-      "css": "email",
-      "code": 59393,
-      "src": "fontawesome"
-    },
-    {
       "uid": "f04a5d24e9e659145b966739c4fde82a",
       "css": "bookmark",
       "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "85528017f1e6053b2253785c31047f44",
+      "css": "message",
+      "code": 59394,
       "src": "fontawesome"
     },
     {
@@ -22,34 +22,10 @@
       "src": "fontawesome"
     },
     {
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github",
-      "code": 59397,
+      "uid": "aa0d9175a3919a260a4012d560e9f01e",
+      "css": "right",
+      "code": 59400,
       "src": "fontawesome"
-    },
-    {
-      "uid": "627abcdb627cb1789e009c08e2678ef9",
-      "css": "twitter",
-      "code": 59394,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "4743b088aa95d6f3b6b990e770d3b647",
-      "css": "facebook",
-      "code": 59395,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "0636c283a9822288a767609062bbf4a4",
-      "css": "wordpress",
-      "code": 59398,
-      "src": "zocial"
-    },
-    {
-      "uid": "dad4e7f8dc2e57c92cffc0231202d9a0",
-      "css": "instagram",
-      "code": 59396,
-      "src": "brandico"
     }
   ]
 }

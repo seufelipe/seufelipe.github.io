@@ -9,7 +9,7 @@ html {
 body {
 	background-color: transparent;
 	color: #6f655f;
-	font: 400 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font: 500 100%/1.5 "museo-1", "museo-2", sans-serif;
 	margin: 0;
 	max-width: 30em;
 	padding: 1.5rem;
@@ -42,7 +42,7 @@ a:visited {
 
 a:hover,
 a:focus {
-	color: #6f655f;
+	color: #383330;
 }
 
 a:hover {
@@ -53,7 +53,7 @@ a:hover {
 }
 
 a:active {
-	color: #e52330;
+	color: #1d1a19;
 }
 
 ul {
@@ -75,60 +75,13 @@ ul a {
 }
 
 [data-icon]:before {
+	color: #d1ccc9;
 	font-family: 'seufelipe';
 	font-size: 100%;
 	line-height: 0;
 	margin-right: .5em;
 	content: attr(data-icon);
 	speak: none;
-}
-
-/* Adam Whitcroft Tooltips
- * https://github.com/AdamWhitcroft/CSS.Tooltips
- */
-
-[data-tip] {
-	position: relative;
-}
-
-[data-tip]:before {
-	border: 6px solid #6f655f;
-	border-top-color: #6f655f;
-	border-right-color: transparent;
-	border-bottom-color: transparent;
-	border-left-color: transparent;
-	content: '';
-	display: none;
-	font-size: 0;
-	height: 0;
-	line-height: 0;
-	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 0;
-	z-index: 8;
-}
-
-[data-tip]:after {
-	background: #6f655f;
-	content: attr(data-tip);
-	color: #fff;
-	display: none;
-	font-size: 1rem;
-	height: 1.5rem;
-	line-height: 1.5;
-	padding: 0 .5em;
-	position:absolute;
-	top: -26px;
-	left: 0;
-	white-space: nowrap;
-	word-wrap: normal;
-	z-index: 9;
-}
-
-[data-tip]:hover:before,
-[data-tip]:hover:after {
-	display:block;
 }
 
 .assistive-text {
@@ -166,19 +119,8 @@ ul a {
 	margin: 0 0 1.5rem 0;
 }
 
-.contact {
-
-}
-
-.contact li {
-	float: left;
-	margin-right: .5em;
-}
-
-.contact .social {
-	font-size: 1.13rem;
-	line-height: 1.33;
-	margin-right: 0;
+.email {
+	display: inline-block;
 }
 
 @media only screen and (min-width: 920px) {
