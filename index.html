@@ -20,7 +20,7 @@
 
         <section class="works">
             <div class="job">
-                <img src="images/historiasqueficam.jpg" data-anim="images/historiasqueficam.gif" alt="Histórias que Ficam" class="job__image">
+                <img src="images/historiasqueficam.jpg" data-swap="images/historiasqueficam.gif" alt="Histórias que Ficam" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Histórias que ficam</span></h2>
                     <div class="job__description">
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/carolquintanilha.jpg" data-anim="images/carolquintanilha.gif" alt="Carol Quintanilha" class="job__image">
+                <img src="images/carolquintanilha.jpg" data-swap="images/carolquintanilha.gif" alt="Carol Quintanilha" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Carol Quintanilha</span></h2>
                     <div class="job__description">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/adtalks.jpg" data-anim="images/adtalks.gif" alt="AdTalks" class="job__image">
+                <img src="images/adtalks.jpg" data-swap="images/adtalks.gif" alt="AdTalks" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>AdTalks</span></h2>
                     <div class="job__description">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/simonemaurina.jpg" data-anim="images/simonemaurina.gif" alt="Simone Maurina" class="job__image">
+                <img src="images/simonemaurina.jpg" data-swap="images/simonemaurina.gif" alt="Simone Maurina" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Simone Maurina</span></h2>
                     <div class="job__description">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/cereja.jpg" data-anim="images/cereja.gif" alt="Cereja" class="job__image">
+                <img src="images/cereja.jpg" data-swap="images/cereja.gif" alt="Cereja" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Cereja</span></h2>
                     <div class="job__description">
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/territoriointimo.jpg" data-anim="images/territoriointimo.gif" alt="Território Íntimo" class="job__image">
+                <img src="images/territoriointimo.jpg" data-swap="images/territoriointimo.gif" alt="Território Íntimo" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Território íntimo</span></h2>
                     <div class="job__description">
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/olhardecinema.jpg" data-anim="images/olhardecinema.gif" alt="Olhar de Cinema" class="job__image">
+                <img src="images/olhardecinema.jpg" data-swap="images/olhardecinema.gif" alt="Olhar de Cinema" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Olhar de Cinema</span></h2>
                     <div class="job__description">
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="job">
-                <img src="images/kungfu.jpg" data-anim="images/kungfu.gif" alt="Kung Fu" class="job__image">
+                <img src="images/kungfu.jpg" data-swap="images/kungfu.gif" alt="Kung Fu" class="job__image">
                 <div class="job__info">
                     <h2 class="job__title"><span>Kung Fu</span></h2>
                     <div class="job__description">
@@ -133,16 +133,16 @@
         <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
         <script>
           $(function(){
-            function swapSrc() {
-                var el = $(this);
+            function swapImageSrc() {
+                var el = $(this).find('.job__image');
                 var swap = el.data('swap');
                 var src = el.attr('src');
 
                 el.attr('src', swap);
                 el.data('swap', src);
             }
-
-            $('.job__image').hover(swapSrc, swapSrc);
+              
+            $('.job').hover(swapImageSrc, swapImageSrc);
           });
         </script>
     </body>
