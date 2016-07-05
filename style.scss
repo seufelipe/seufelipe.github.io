@@ -1,0 +1,133 @@
+$small-break: 480px !default;
+$medium-break: 481px !default;
+
+@mixin small() {
+    @media screen and (max-width: $small-break) {
+        @content;
+    }
+}
+
+@mixin medium() {
+    @media screen and (max-width: $medium-break) {
+        @content;
+    }
+}
+
+@mixin large() {
+    @media screen and (min-width: $medium-break) {
+        @content;
+    }
+}
+
+/*Animation Prefs*/
+@-webkit-keyframes pulse {
+      0% { background-color:  hsl(216, 22%, 29%); }
+     25% { background-color:  hsl(194, 33%, 35%); }
+     50% { background-color:  hsl(94, 18%, 37%); }
+     75% { background-color:  hsl(24, 18%, 46%); }
+     100% { background-color: hsl(252, 4%, 24%); }
+}
+
+html {
+    -webkit-animation: pulse 80s infinite alternate;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: hsl(0, 0%, 95%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 500 100%/1.5 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+::-moz-selection {
+    background: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 0%);
+    text-shadow: none;
+}
+
+::selection {
+    background: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 0%);
+    text-shadow: none;
+}
+
+a {
+    &:link,
+    &:visited {
+        border-bottom: 2px solid;
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2::after {
+    content: '\2015';
+    display: block;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+
+    @include large {
+        max-width: 701px;
+        width: 32vw;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    @include small {
+        flex-direction: column;
+    }
+}
+
+.about {
+    padding: 1.5em;
+
+    &::after {
+        content: '\2715';
+        display: block;
+    }
+
+    @include large {
+        order: 2;
+        position: relative;
+        margin-left: -3em;
+        top: 3em;
+    }
+}
