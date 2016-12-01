@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="one" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,9 +24,17 @@
                 <h1>Felipe Coelho Kussik</h1>
                 <h2>Design, front-end development, problem solving</h2>
                 <p><a href="http://github.com/seufelipe" title="+seufelipe">GitHub</a>, <a href="http://instagram.com/seufelipe" title="@seufelipe">Instagram</a>, <a href="http://letterboxd.com/seufelipe" title="/seufelipe">Letterboxd</a>, <a href="http://twitter.com/seufelipe" title="@seufelipe">Twitter</a></p>
-                <p><a href="mailto:hola@seufelipe.com.br" title="English / Português" class="email">hola@seufelipe.com.br</a></p>
+                <p><a href="mailto:email@seufelipe.me" title="English / Português" class="email">email@seufelipe.me</a></p>
             </section>
-            <img src="images/felipe.jpg" alt="A picture of Felipe in the winter of '13 sitting along a statue of a man he would later on discover to be of the late Irish poet and novelist Patrick Kavanagh." />
+            <figure>
+                <img src="images/felipe.jpg" alt="A picture of Felipe in the winter of '13 sitting along a statue of a man he would later on discover to be of the late Irish poet and novelist Patrick Kavanagh." />
+            </figure>
         </main>
+        <script>
+            onload = function() {
+    document.getElementsByTagName('body')[0].setAttribute('id', 'random-' + Math.floor(Math.random()*7) );
+}
+
+        </script>
     </body>
 </html>

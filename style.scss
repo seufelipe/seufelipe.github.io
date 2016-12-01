@@ -1,8 +1,8 @@
-$color-background: #3a4d60;
-$color-text: #c8f7c5;
+$color-background: #f18700;
+$color-text: #ffffff;
 
-$small-break: 480px !default;
-$medium-break: 481px !default;
+$small-break: 10em !default;
+$medium-break: 10em !default;
 
 @mixin small() {
     @media screen and (max-width: $small-break) {
@@ -37,21 +37,17 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-
-    @include large {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 a {
-    &:link,
-    &:visited {
-        border-bottom: 2px solid;
-        color: inherit;
-        text-decoration: none;
-    }
+    border-bottom: 2px solid;
+    color: inherit;
+    text-decoration: none;
 }
 
 h1,
@@ -74,35 +70,38 @@ h2::after {
 
 img {
     display: block;
-    height: auto;
-    margin: 0;
     max-width: 100%;
-
-    @include large {
-        max-width: 701px;
-        width: 32vw;
-    }
 }
 
 main {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-
-    @include small {
-        flex-direction: column;
-    }
 }
 
 section {
-    display: block;
+    border: 4px solid;
+    margin: 0;
     padding: 1.5em;
+    position: relative;
+}
 
-    @include large {
-        border: 4px solid;
-        order: 2;
-        position: relative;
+@media screen and (max-width: 26em) {
+    main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 43em) {
+    section {
         margin-left: -3em;
+        order: 2;
         top: 3em;
+    }
+
+    img {
+        max-width: 701px;
+        width: 32vw;
     }
 }

@@ -1,4 +1,5 @@
 .DS_Store
 *.codekit
+*.codekit3
 .sass-cache/
 *.css.map
