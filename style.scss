@@ -66,8 +66,12 @@ p {
 
 h1 {
     font-weight: 700;
-    margin-top: 1.5rem;
+    margin: 1.5em 0 0 -1.5em;
     text-transform: uppercase;
+}
+
+h2 {
+    margin-left: -1.5em;
 }
 
 img {
@@ -96,7 +100,7 @@ section {
 
 @media screen and (min-width: 43em) {
     section {
-        margin-left: -4.5em;
+        margin-left: -3em;
         order: 2;
     }
 
