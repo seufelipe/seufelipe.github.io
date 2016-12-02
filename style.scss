@@ -45,9 +45,14 @@ body {
 }
 
 a {
-    border-bottom: 2px solid;
+    box-shadow: inset 0 -2px 0 0 currentColor;
     color: inherit;
     text-decoration: none;
+    transition: box-shadow .1s ease-in-out;
+
+    &:hover {
+        box-shadow: inset 0 -6px 0 0 currentColor;
+    }
 }
 
 h1,
@@ -60,12 +65,9 @@ p {
 }
 
 h1 {
+    font-weight: 700;
+    margin-top: 1.5rem;
     text-transform: uppercase;
-}
-
-h2::after {
-    content: '\002B';
-    display: block;
 }
 
 img {
@@ -75,12 +77,11 @@ img {
 
 main {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
 }
 
 section {
-    border: 4px solid;
     margin: 0;
     padding: 1.5em;
     position: relative;
@@ -95,9 +96,8 @@ section {
 
 @media screen and (min-width: 43em) {
     section {
-        margin-left: -3em;
+        margin-left: -4.5em;
         order: 2;
-        top: 3em;
     }
 
     img {
