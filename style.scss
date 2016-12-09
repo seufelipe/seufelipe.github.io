@@ -1,4 +1,4 @@
-$color-background: #f18700;
+$color-background: crimson;
 $color-text: #ffffff;
 
 $small-break: 10em !default;
@@ -68,6 +68,20 @@ h1 {
     font-weight: 700;
     margin: 1.5em 0 0 -1.5em;
     text-transform: uppercase;
+
+    a {
+        background-color: $color-text;
+        box-shadow: none;
+        color: $color-background;
+        display: inline-block;
+        padding: 0 1em;
+        transition: padding .1s ease-in-out;
+
+        &:hover {
+            box-shadow: none;
+            padding-right: .75em;
+        }
+    }
 }
 
 h2 {

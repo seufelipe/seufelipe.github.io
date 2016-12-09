@@ -1,5 +1,5 @@
 html {
-  background-color: #f18700;
+  background-color: crimson;
   height: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
@@ -49,6 +49,17 @@ h1 {
   font-weight: 700;
   margin: 1.5em 0 0 -1.5em;
   text-transform: uppercase; }
+  h1 a {
+    background-color: #ffffff;
+    box-shadow: none;
+    color: crimson;
+    display: inline-block;
+    padding: 0 1em;
+    -webkit-transition: padding .1s ease-in-out;
+    transition: padding .1s ease-in-out; }
+    h1 a:hover {
+      box-shadow: none;
+      padding-right: .75em; }
 
 h2 {
   margin-left: -1.5em; }
