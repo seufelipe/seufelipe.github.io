@@ -1,4 +1,4 @@
-$color-background: crimson;
+$color-background: #009efd;
 $color-text: #ffffff;
 
 $small-break: 10em !default;
@@ -24,6 +24,7 @@ $medium-break: 10em !default;
 
 html {
     background-color: $color-background;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
     height: 100%;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
