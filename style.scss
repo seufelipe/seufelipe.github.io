@@ -1,6 +1,6 @@
-$color-background: #feefee;
-$color-text: #f72e2a;
-$color-accent: $color-text;
+$color-background: #fff;
+$color-text: #222;
+$color-accent: #fe6;
 
 $small-break: 380px !default;
 $medium-break: 768px !default;
@@ -24,9 +24,8 @@ $medium-break: 768px !default;
 }
 
 html {
-  background-color: $color-background;
-  background-repeat: no-repeat;
-  font: normal 100%/1.6 Karla, sans-serif;
+  box-sizing: border-box;
+  font: normal 100%/1.4 Karla, sans-serif;
   height: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
@@ -37,18 +36,36 @@ html {
   }
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  background: $color-background url('images/bg.png');
   color: $color-text;
   margin: 0;
-  padding: 3rem;
+  padding: 26px;
   position: relative;
 }
 
+::selection {
+  background-color: crimson;
+}
+
+::-moz-selection {
+  background-color: crimson;
+}
+
 a {
-  box-shadow: inset 0 -2px 0 0 currentColor;
   font-family: Vollkorn, serif;
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    box-shadow: inset 0 -.6em 0 0 $color-accent;
+  }
 }
 
 h1,
@@ -59,41 +76,83 @@ p {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 1.5rem;
-}
-
-a img {
-  display: none;
-  position: absolute;
-  top: 1.5rem;
-  right: 0;
-  z-index: -1;
-  width: 300px;
-}
-
-a:hover img {
-  display: block;
+section {
+  position: relative;
 }
 
 main {
-  position: relative;
+  background-color: #fff;
 }
 
-section {
-  margin: 0 auto;
-  position: relative;
+.opening {
+  background-color: $color-text;
+  color: $color-background;
+  font-size: 2.5rem;
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
 }
 
-.about,
-.work,
+.about {
+  background-color: $color-accent;
+  margin: -3rem 0 0 auto;
+  max-width: 48em;
+  padding: 3rem;
+}
+
+.work {
+  border: 2px solid;
+  box-shadow: 4px 4px 0 $color-text;
+  margin: 1.5rem;
+  padding: 1.5rem 0;
+
+  p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    line-height: 1.2;
+    flex: 0 0 33.333%;
+    padding: .75em 0;
+
+    &::after {
+      content: '\2192';
+      opacity: .3;
+    }
+  }
+}
+
 .contact {
-  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  text-align: center;
+}
+
+.email {
+  font-size: 2.5rem;
 }
 
 .thanks {
-  text-align: right;
-  font-size: .5em;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  img {
+    height: 1em;
+  }
 }
