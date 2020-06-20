@@ -17,8 +17,8 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff url("images/bg.png");
-  color: #222;
+  background-color: #F7F9BF;
+  color: #1952FD;
   margin: 0;
   padding: 26px;
   position: relative; }
@@ -37,8 +37,8 @@ a {
   color: inherit;
   text-decoration: none; }
   a:hover {
-    -webkit-box-shadow: inset 0 -0.6em 0 0 #fe6;
-            box-shadow: inset 0 -0.6em 0 0 #fe6; }
+    -webkit-box-shadow: inset 0 -0.6em 0 0 #1952FD;
+            box-shadow: inset 0 -0.6em 0 0 #1952FD; }
 
 h1,
 h2,
@@ -48,85 +48,8 @@ p {
   margin: 0; }
 
 section {
-  position: relative; }
-
-main {
-  background-color: #fff; }
-
-.opening {
-  background-color: #222;
-  color: #fff;
-  font-size: 2.5rem;
-  mix-blend-mode: multiply;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3rem; }
-
-.about {
-  background-color: #fe6;
-  margin: -3rem 0 0 auto;
-  max-width: 48em;
-  padding: 3rem; }
-
-.work {
-  border: 2px solid;
-  -webkit-box-shadow: 4px 4px 0 #222;
-          box-shadow: 4px 4px 0 #222;
-  margin: 1.5rem;
-  padding: 1.5rem 0; }
-  .work p {
-    margin-bottom: 1.5rem;
-    text-align: center; }
-
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-  .projects li {
-    line-height: 1.2;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.333%;
-            flex: 0 0 33.333%;
-    padding: .75em 0; }
+  position: relative;
+}
     .projects li::after {
       content: '\2192';
       opacity: .3; }
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 75vh;
-  text-align: center; }
-
-.email {
-  font-size: 2.5rem; }
-
-.thanks {
-  padding: 1.5rem 0;
-  text-align: center; }
-  .thanks img {
-    height: 1em; }
