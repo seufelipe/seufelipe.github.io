@@ -1,0 +1,25 @@
+<section class="about">
+  {% if include.divider == true %}
+    <div class="wrap"><hr/></div>
+    {% endif %}
+  <div class="wrap grid">
+
+    <div class="about__image">
+      <img src="{{ '/images/profile.jpg' | relative_url }}" alt="">
+
+      {% include component-socials.html %}
+    </div>
+
+    <div class="about__content">
+      <h2 class="title">Hey, I’m Felipe!</h2>
+      <p class="subtitle subtitle--light">I’m a designer / developer with over 15 years of experience.
+      </p>
+
+      <p>My skills include product design, art direction, prototyping, mobile design,
+        branding, front-end development and team leadership.</p>
+      <p>I'm always looking for new challenges — feel free to drop an email!</p>
+
+      <a href="#" class="cta button--fill contact-trigger js-contact">Get in Touch</a>
+    </div>
+  </div>
+</section>

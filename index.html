@@ -1,50 +1,77 @@
-<!doctype html>
-<html class="one" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Felipe Coelho Kussik: designer, front-end developer, problem solver</title>
-        <meta name="description" content="Felipe Coelho Kussik: designer, full stack front-end developer, problem solver">
-        <meta name="viewport" content="width=device-width">
+---
+layout: default
+overtitle: 👋
+title: Generalist Product Designer
+description: Solving problems — big and small — through thoughtful design.
+featured_image: /images/social.jpg
+---
 
-        <meta property="og:title" content="Felipe's Home Page">
-        <meta name="og:site_name" content="Felipe's Home Page">
-        <meta property="og:description" content="Felipe Coelho Kussik: designer, full stack front-end developer, problem solver">
-        <meta property="og:image" content="https://seufelipe.me/images/image.jpg">
-        <meta property="og:url" content="https://seufelipe.me/">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:image:alt" content="Felipe's Home Page">
+<div class="page-home">
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Vollkorn:400,700/Karla:400,700">
-    </head>
-    <body>
-      <main>
-        <section class="about">
-          <p>My name is Felipe Coelho Kussik.<br/>I am a Dublin based multidisciplinary internet person with great experience working alongside a wide range of clients, from individuals to start-ups to stablished companies.</p>
-        </section>
-        <section class="work">
-          <ul class="projects">
-            <li class="project"><a href="http://tandemhrsolutions.com/">Tandem</a></li>
-            <li class="project"><a href="https://nutmost.ie/">Nutmost</a></li>
-            <li class="project"><a href="https://errigalbay.com/">Errigal Bay</a></li>
-            <li class="project"><a href="http://spcultura.prefeitura.sp.gov.br/">Mapas Culturais</a></li>
-            <li class="project"><a href="http://activeschoolflag.ie/">Active School</a></li>
-            <li class="project"><a href="https://wanderlustdalkey.ie/">Wanderlust Dalkey</a></li>
-            <li class="project"><a href="https://delahunt.ie/">Delahunt</a></li>
-            <li class="project"><a href="https://www.marialogan.com/">Maria Logan</a></li>
-            <li class="project"><a href="http://tablepartners.com.br/">Table Partners</a></li>
-            <li class="project"><a href="http://adtalks.com.br/">AdTalks</a></li>
-            <li class="project"><a href="http://carolquintanilha.com.br/">Carol Quintanilha</a></li>
-            <li class="project"><a href="http://kungfuprodutora.com/">Kung Fu</a></li>
-          </ul>
-        </section>
-        <section class="contact">
-          <p>
-            <a href="mailto:seufelipe@hey.com" title="English / Português / Español" class="email">seufelipe@hey.com</a>
-            <br/>And you can find me on <a href="https://www.linkedin.com/in/seufelipe/" title="@seufelipe">LinkedIn</a>, <a href="https://github.com/seufelipe" title="+seufelipe">GitHub</a>, <a href="https://instagram.com/seufelipe" title="@seufelipe">Instagram</a>, <a href="https://letterboxd.com/seufelipe" title="/seufelipe">Letterboxd</a> and <a href="https://twitter.com/seufelipe" title="@seufelipe">Twitter</a>.
-          </p>
-        </section>
-      </main>
-    </body>
-</html>
+	{% if site.data.settings.hero_settings.background_image %}
+	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
+	{% endif %}
+
+	<section class="hero">
+		<div class="wrap grid">
+			<div class="title">
+				<p class="subtitle">{{ page.overtitle }}</p>
+				<h1>{{ page.title }}</h1>
+			</div>
+
+			<p class="intro subtitle--light">
+				{{ page.description }}
+				<a href="#" class="hero__cta button--fill contact-trigger js-contact">Get In Touch</a>
+			</p>
+		</div>
+	</section>
+
+	<section class="listing">
+		<div class="wrap">
+
+			{% for project in site.projects reversed %}
+
+			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+
+			<article class="project__preview">
+				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
+
+				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+					{% for image in project.gallery_images %}
+					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+					{% endfor %}
+				</div>
+
+				<div class="project__content grid" style="border-color: {{ accent_color }}">
+					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+					<p class="project__description --small">
+						{{ project.description }}
+						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
+							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View Case Study</a>
+					</p>
+				</div>
+			</article>
+
+			{% endfor %}
+		</div>
+	</section>
+
+	{% include section__about.html %}
+
+	<!-- <section class="recent-posts">
+		<div class="wrap grid">
+			<header class="recent-posts__header">
+				<h4>Recent blog posts</h4>
+				<a href="{{ '/blog' | relative_url }}" class="action button--text--accent --right">All Posts</a>
+			</header>
+
+			<div class="recent-posts__list grid">
+				{% for post in site.posts limit: 3 %}
+				{% include component__post-preview.html %}
+				{% endfor %}
+			</div>
+
+			<a href="{{ '/blog' | relative_url }}" class="action-bottom button--text--accent --right">All Posts</a>
+		</div>
+	</section> -->
+</div>
