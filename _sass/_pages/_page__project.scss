@@ -13,7 +13,8 @@
   }
 
   .post__content {
-    p {
+    p,
+    ol {
       color: $text-medium-color;
     }
 
