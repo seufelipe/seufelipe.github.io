@@ -13,6 +13,10 @@
   }
 
   .post__content {
+    p {
+      color: $text-medium-color;
+    }
+
     hr {
       background-color: var(--accent);
     }

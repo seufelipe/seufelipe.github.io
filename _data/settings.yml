@@ -10,8 +10,8 @@ menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
-    - title: 'Blog'
-      url: '/blog/'
+    - title: 'CV ↗'
+      url: 'https://www.dropbox.com/s/fy771irttz55ceu/felipe-resume.pdf?dl=0'
 
 footer_settings:
   logo_image:
@@ -70,9 +70,9 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@577&family=Sora:wght@477&display=swap" rel="stylesheet">'
-  title_font: 'Sora, serif'
-  body_font: 'Inconsolata, sans-serif'
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400..900&family=Literata:ital,wght@0,500;0,900;1,500;1,900&display=swap" rel="stylesheet">'
+  title_font: 'Epilogue, sans-serif'
+  body_font: 'Literata, serif'
   regular_weight: 500
   bold_weight: 700
   site_title:
@@ -90,7 +90,7 @@ font_settings:
   h1:
     size: 64
     size_small: 42
-    weight: 700
+    weight: 900
     letter_spacing: -1.5
     letter_spacing_small: -1.2
     line_height: 72
@@ -98,7 +98,7 @@ font_settings:
   h2:
     size: 48
     size_small: 36
-    weight: 700
+    weight: 900
     letter_spacing: -1.6
     letter_spacing_small: -1.04
     line_height: 56
@@ -106,7 +106,7 @@ font_settings:
   h3:
     size: 40
     size_small: 30
-    weight: 700
+    weight: 900
     letter_spacing: -1.4
     letter_spacing_small: -0.54
     line_height: 48
@@ -135,8 +135,8 @@ font_settings:
   subtitle:
     size: 22
     size_small: 20
-    weight_regular: 400
-    weight_heavy: 500
+    weight_regular: 500
+    weight_heavy: 900
     letter_spacing: 0.16
     letter_spacing_small: 0.2
     line_height: 32
