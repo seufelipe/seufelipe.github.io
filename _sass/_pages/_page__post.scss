@@ -29,6 +29,7 @@
   }
 
   .post__content {
+    color: $text-medium-color;
     max-width: 656px;
     margin-bottom: 80px;
 
@@ -163,7 +164,7 @@
             text-align: center;
             color: $text-light-color;
           }
-          
+
           p {
             display: inline;
             max-width: 100%;
