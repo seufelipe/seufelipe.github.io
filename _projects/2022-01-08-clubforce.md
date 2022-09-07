@@ -4,7 +4,6 @@ subtitle: Market leader in sports club automation, payments, fundraising and com
 date: 2022-01-08 00:00:00
 description: As the only UX designer working across multiple SCRUM teams building the next version of Clubforce, a big part of my job involves supporting and empowering my colleagues.
 featured_image: clubforce02.png
-accent_color: '#2050CE'
 gallery_images:
   - clubforce01.png
 ---
