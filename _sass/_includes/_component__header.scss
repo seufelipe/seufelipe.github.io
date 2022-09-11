@@ -40,48 +40,27 @@
 
   .header__menu {
     display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    z-index: 1000;
-
-    opacity: 0;
-    visibility: hidden;
-    @include transition(all 0.6s cubic-bezier(0.2, 0.3, 0, 1));
-  }
-
-  .header__cta {
-    justify-self: end;
+    width: initial;
+    height: initial;
+    position: relative;
+    background-color: none;
+    justify-self: flex-end;
+    opacity: 1;
+    visibility: visible;
+    top: 0;
     align-self: center;
-    display: none;
   }
 
   @include mq(tabletp) {
     padding: 64px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 
     .wrap {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .header__menu {
-      width: initial;
-      height: initial;
-      position: relative;
-      background-color: none;
-      justify-self: center;
-      opacity: 1;
-      visibility: visible;
-      top: 0;
-      align-self: center;
-    }
-
-    .header__menu,
-    .header__cta {
-      display: block;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -166,21 +145,19 @@
 .menu__list {
   list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 120px;
 
   .menu__list__item {
-    margin-bottom: 24px;
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
   }
 
   .menu__list__item__link,
   .menu__cta__link {
-    font-size: $h4-size-small;
-    font-weight: $h4-weight;
-    line-height: $h4-lineheight;
-    letter-spacing: $h4-spacing-small;
-    text-transform: none;
+    font-size: $p-size;
+    font-weight: $button-weight;
+    letter-spacing: $button-spacing;
 
     &.active-link {
       color: $accent-color;
@@ -189,32 +166,7 @@
 
   .menu__cta__link {
     color: $accent-color;
+    display: none;
   }
 
-  @include mq(tabletp) {
-    margin-top: 0;
-    flex-direction: row;
-
-    .menu__list__item {
-      margin-bottom: 0px;
-      
-      &:not(:first-child) {
-        margin-left: 50px;
-      }
-    }
-
-    .menu__list__item__link {
-      font-size: 14px;
-      line-height: 18px;
-      display: inline-block;
-      color: $text-dark-color;
-      font-weight: $button-weight;
-      letter-spacing: $button-spacing;
-      text-transform: uppercase;
-    }
-
-    .menu__cta__link {
-      display: none;
-    }
-  }
 }

@@ -9,6 +9,12 @@
 	width: 100%;
 }
 
+@include mq(tabletp) {
+  .page {
+    padding-top: 209px;
+  }
+}
+
 .wrap {
 	position: relative;
 	margin: 0 auto;

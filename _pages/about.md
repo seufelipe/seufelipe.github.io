@@ -1,6 +1,6 @@
 ---
 title: About
-subtitle: A Brazilian generalist designer currently based in windy Dublin, Ireland.
+subtitle: A product designer from Brazil, based in windy Dublin, Ireland.
 description: About Felipe
 featured_image: /images/social.jpg
 ---
