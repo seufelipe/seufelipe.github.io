@@ -10,18 +10,20 @@ gallery_images:
 
 Clubforce is a sports club management platform for memberships, fundraising, communications and promotion. They are a market leader, with over 10 years history. Built for volunteers, by volunteers.
 
-I joined the company as First Designer, to work on the next generation of the platform.
+I joined the company as First Designer, to work on the next generation of the platform. During my time there, I was involved on Everything Design, from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
 
-### A components library
+### A design system?
 
-The first version of the web platform had been built by a small group of full-stack engineers. It was in pretty good shape, but two great challenges had to be addressed:
+The first version of the (web) platform had been built by a small group of full-stack engineers, without a dedicated designer. It was in pretty good shape, but two great challenges had to be addressed:
 
 - it had to scale
 - re-branding: we had to consider how to integrate a new logo, typography and colour scheme
 
-First step was doing an UI inventory. We found out the interface was made of equal parts Angular Material, Bootstrap and custom-built components.
+I reached out to the engineers, to try and understand some of the decisions that had been made. We found out the interface was made of equal parts Material Design (Angular Material, specifically), Bootstrap and custom-built components.
 
-We ended up with a component library on Figma, which brought design close to code and allowed us to iterate on and deliver interfaces consistently faster.
+Following the Atomic Design principles, a Figma Library was the first thing we delivered. It contained documentation and guidelines for every component, from Typography and Colours, to page layouts.
+
+The library is a living document. Any time a element needs to be introduced or existing elements need to be modified, we do inventory and consider the general impact. Developers and managers are included in the process, which allows for a more realistic cycle.
 
 ### Tokens for better website customisation
 
