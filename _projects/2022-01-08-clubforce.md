@@ -10,14 +10,14 @@ gallery_images:
 
 Clubforce is a sports club management platform for memberships, fundraising, communications and promotion. They are a market leader, with over 10 years history. Built for volunteers, by volunteers.
 
-I joined the company as First Designer, to work on the next generation of the platform. During my time there, I was involved on Everything Design, from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
+I joined the company as First Designer, to work on the next generation of the platform. During my time there, I was involved on Everything Design: from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
 
 ### A design system?
 
 The first version of the (web) platform had been built by a small group of full-stack engineers, without a dedicated designer. It was in pretty good shape, but two great challenges had to be addressed:
 
-- it had to scale
-- re-branding: we had to consider how to integrate a new logo, typography and colour scheme
+1. it had to scale
+2. re-branding: we had to consider how to integrate a new logo, typography and colour scheme
 
 I reached out to the engineers, to try and understand some of the decisions that had been made. We found out the interface was made of equal parts Material Design (Angular Material, specifically), Bootstrap and custom-built components.
 
@@ -35,6 +35,10 @@ We researched the most popular colours for each county in Ireland and used that 
 
 ### Progressing the company's UX maturity level
 
-I worked with the Head of Product on progressing the company UX maturity from the current low emergent level. Our main focus was on increasing awareness and improving processes.
+I worked with the Head of Product on an initiative to progress the company UX Maturity Level, which at the time was at a low, emergent level. Our main focus was on increasing awareness and improving processes.
 
-That was an ongoing effort and in practical terms it means small things such as: dedicated Slack channels and Confluence spaces for design discussions, an internal design blog and, a series of talks and workshops.
+That was an ongoing effort. In practical terms it meant things such as:
+
+- dedicated Slack channels and Confluence spaces for design-focused discussions, which were open to everyone in the company;
+- a design blog, with regular status updates on ongoing projects and other long form articles;
+- a series of talks and workshops on design concepts and process. Those happened in the office and were open to everyone in the company
