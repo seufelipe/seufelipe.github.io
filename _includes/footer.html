@@ -1,14 +1,14 @@
 <footer class="footer">
 	<div class="wrap grid">
 
-		<div>
-			{% include component-socials.html %}
-		</div>
-
 		<div class="footer__copyright">
 			{% if site.data.settings.footer_settings.tagline %}
 			<p>{{ site.data.settings.footer_settings.tagline }}</p>
 			{% endif %}
+		</div>
+
+		<div class="footer__socials">
+			{% include component-socials.html %}
 		</div>
 
 	</div>

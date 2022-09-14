@@ -32,17 +32,16 @@
 	      color: $accent-color;
 	    }
 	}
-	
+
 	.footer__copyright {
-
 		@include mq(tabletp) {
-			justify-self: center;
-			align-self: center;
-			text-align: right;
+			text-align: left;
 		}
+	}
 
-		p {
-			margin-bottom: 10px;
+	.footer__socials {
+		@include mq(tabletp) {
+			text-align: right;
 		}
 	}
 
@@ -55,10 +54,6 @@
 
 		.footer__logo {
 			justify-self: start;
-		}
-		
-		.footer__copyright {
-			justify-self: end;
 		}
 	}
 }
