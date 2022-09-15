@@ -12,7 +12,7 @@ Clubforce is a sports club management platform for memberships, fundraising, com
 
 I joined the company as First Designer, to work on the next generation of the platform. During my time there, I was involved on Everything Design: from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
 
-### A design system?
+### A design system
 
 The first version of the (web) platform had been built by a small group of full-stack engineers, without a dedicated designer. It was in pretty good shape, but two great challenges had to be addressed:
 
@@ -27,11 +27,19 @@ The library is a living document. Any time a element needs to be introduced or e
 
 ### Tokens for better website customisation
 
-Club Websites were an important part of Clubforce Modernisation. An easy way for clubs to get closer to their supporters: posting news & updates, contact details and information, and a shop front for fundraising and memberships.
+Club Websites are an important part of Clubforce Modernisation. An easy way for clubs to get closer to their supporters: posting news & updates, contact details and information, and a shop front for fundraising and memberships.
 
 Customisation is a big part of this. Clubs want their websites to look & feel unique. Colours are one of the most recognisable aspects of a club identity.
 
 We researched the most popular colours for each county in Ireland and used that as a starting point. We offer two options: one primary and one secondary. CSS variables are updated based on the user choices.
+
+{% include post-components/gallery.html
+  columns = 1
+  full_width = true
+  images = "/images/projects/clubforce03.png"
+%}
+
+*Exploring different colour combinations. A club from Co. Galway could select Maroon and Black as Primary and Secondary colours, whereas a club from Co. Mayo could pick Red and Green*
 
 ### Progressing the company's UX maturity level
 

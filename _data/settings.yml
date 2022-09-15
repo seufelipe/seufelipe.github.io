@@ -63,13 +63,13 @@ social_settings:
   bandcamp_url: ''
 
 color_settings:
-  background_color: '#fff'
+  background_color: '#faf9f6'
   background_alt_color: '#f4f5f6'
-  text_dark_color: '#020100'
-  text_medium_color: '#020100'
-  text_light_color: '#020100'
-  accent_color: '#020100'
-  border_color: '#020100'
+  text_dark_color: '#050306'
+  text_medium_color: '#050306'
+  text_light_color: '#050306'
+  accent_color: '#050306'
+  border_color: '#050306'
   error_color: '#D64541'
 
 font_settings:
