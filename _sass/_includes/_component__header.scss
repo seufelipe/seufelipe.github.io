@@ -144,18 +144,11 @@
 
 .menu__list {
   list-style: none;
-  display: flex;
-  align-items: center;
-
-  .menu__list__item {
-    &:not(:first-child) {
-      margin-left: 3rem;
-    }
-  }
+  text-align: right;
 
   .menu__list__item__link,
   .menu__cta__link {
-    font-size: $p-size;
+    font-size: $menu-large;
     font-weight: $button-weight;
     letter-spacing: $button-spacing;
 

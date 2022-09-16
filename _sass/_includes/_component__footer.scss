@@ -14,4 +14,20 @@
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+
+	.f__socials {
+		text-align: right;
+
+		.socials__item {
+			display: block;
+
+			@include mq(tabletp) {
+				display: inline-block;
+
+				&:not(:first-child) {
+				  margin-left: 1rem;
+				}
+			}
+		}
+	}
 }

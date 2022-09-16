@@ -84,33 +84,3 @@
   margin: 0;
   padding: 0;
 }
-
-.socials__item {
-  margin-left: 24px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-}
-
-.socials__item__link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 100%;
-  background: $text-dark-color;
-  font-size: 16px;
-  color: $background-color;
-
-  &:hover {
-    background: $accent-color;
-    color: $background-color;
-  }
-
-  &:active {
-    transform: scale(0.92);
-  }
-}
