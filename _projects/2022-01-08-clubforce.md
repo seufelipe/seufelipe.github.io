@@ -21,6 +21,14 @@ The first version of the (web) platform had been built by a small group of full-
 
 I reached out to the engineers, to try and understand some of the decisions that had been made. We found out the interface was made of equal parts Material Design (Angular Material, specifically), Bootstrap and custom-built components.
 
+{% include post-components/gallery.html
+  columns = 1
+  full_width = true
+  images = "/images/projects/clubforce04.png"
+%}
+
+*Inventory of buttons in admin areas. And then the button component (on Figma)*
+
 Following the Atomic Design principles, a Figma Library was the first thing we delivered. It contained documentation and guidelines for every component, from Typography and Colours, to page layouts.
 
 The library is a living document. Any time a element needs to be introduced or existing elements need to be modified, we do inventory and consider the general impact. Developers and managers are included in the process, which allows for a more realistic cycle.
