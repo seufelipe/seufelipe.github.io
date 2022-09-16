@@ -36,7 +36,7 @@ contact_settings:
 social_settings:
   facebook_url: ''
   linkedin_url: 'https://www.linkedin.com/in/seufelipe/'
-  github_url: ''
+  github_url: 'https://github.com/seufelipe'
   twitter_url: 'https://twitter.com/seufelipe/'
   instagram_url: 'https://instagram.com/seufelipe/'
   letterboxd_url: 'https://letterboxd.com/seufelipe/'
@@ -75,27 +75,27 @@ color_settings:
 font_settings:
   font_embed: '<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500;700&display=swap" rel="stylesheet">'
-  title_font: '"Spline Sans", sans-serif'
-  body_font: '"Spline Sans", sans-serif'
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap" rel="stylesheet">'
+  title_font: '"Albert Sans", sans-serif'
+  body_font: '"Albert Sans", sans-serif'
   regular_weight: 500
-  bold_weight: 700
+  bold_weight: 800
   site_title:
     small_size: 30
     medium_size: 40
     large_size: 45
-    weight: 700
+    weight: 800
     letter_spacing: -0.02
   menu:
     small_size: 30
     medium_size: 15
     large_size: 17
-    weight: 600
+    weight: 800
     letter_spacing: 0
   h1:
     size: 64
     size_small: 42
-    weight: 900
+    weight: 800
     letter_spacing: -1.5
     letter_spacing_small: -1.2
     line_height: 72
@@ -103,7 +103,7 @@ font_settings:
   h2:
     size: 48
     size_small: 36
-    weight: 900
+    weight: 800
     letter_spacing: -1.6
     letter_spacing_small: -1.04
     line_height: 56
@@ -111,7 +111,7 @@ font_settings:
   h3:
     size: 40
     size_small: 30
-    weight: 900
+    weight: 800
     letter_spacing: -1.4
     letter_spacing_small: -0.54
     line_height: 48
@@ -119,7 +119,7 @@ font_settings:
   h4:
     size: 32
     size_small: 28
-    weight: 700
+    weight: 800
     letter_spacing: -1
     letter_spacing_small: -0.6
     line_height: 36
@@ -127,21 +127,21 @@ font_settings:
     small_size: 17
     medium_size: 20
     large_size: 20
-    weight: 700
+    weight: 800
     letter_spacing: 0
     line_height: 1.6
   h6:
     small_size: 17
     medium_size: 20
     large_size: 20
-    weight: 700
+    weight: 800
     letter_spacing: 0
     line_height: 1.6
   subtitle:
     size: 22
     size_small: 20
     weight_regular: 500
-    weight_heavy: 900
+    weight_heavy: 800
     letter_spacing: 0.16
     letter_spacing_small: 0.2
     line_height: 32
@@ -149,14 +149,14 @@ font_settings:
   p:
     size: 18
     size_small: 17
-    weight: 400
+    weight: 500
     letter_spacing: 0.04
     letter_spacing_small: 0
     line_height: 28
   p_small:
     size: 16
     size_small: 15
-    weight: 400
+    weight: 500
     letter_spacing: 0
     line_height: 24
   label:
@@ -168,7 +168,7 @@ font_settings:
     line_height: 16
   footnote:
     size: 13
-    weight: 400
+    weight: 500
     letter_spacing: -0.04
     line_height: 12
   blockquote:
@@ -179,7 +179,7 @@ font_settings:
     letter_spacing: -0.02
     line_height: 1.6
   buttons:
-    weight: 500
+    weight: 800
     letter_spacing: 0.4
 
 advanced_settings:
