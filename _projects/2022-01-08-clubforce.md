@@ -10,9 +10,26 @@ gallery_images:
 
 Clubforce is a sports club management platform for memberships, fundraising, communications and promotion. They are a market leader, with over 10 years history. Built for volunteers, by volunteers.
 
-I joined the company as First Designer, to work on the next generation of the platform. During my time there, I was involved on Everything Design: from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
+I joined the company as First Designer, to work on the next generation of the platform: Clubforce Modernisation (or simply "CM"). During my time there, I was involved on Everything Design: from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
 
-### A design system
+### Qualitative User Research
+
+The most important Clubforce offer is probably Fundraising. It's one of the reasons the company exists: to allow for people living abroad (the "Irish Diaspora") to be able to support financially their local clubs back at home.
+
+One way clubs use to raise funds is by selling lotto tickets. In order to do that, they need to go through a multi-step process: validating licence details, connecting to a payment provider (Stripe), setting up recurring draws etc. It's not super complicated, but let's say things can go wrong.
+
+To help better inform our decisions while building and iterating on those journeys, we did User Interviews. Our Customer Care team reached out to some folks (Clubforce users) and organised online sessions. Those were recorded, processed and the insights were used by the team to help prioritise stories.
+
+Here's how one of those looked like (names were changed to protect their identities):
+
+{% include post-components/gallery.html
+  columns = 1
+  full_width = true
+  images = "/images/projects/clubforce05.png"
+%}
+
+
+### A design system?
 
 The first version of the (web) platform had been built by a small group of full-stack engineers, without a dedicated designer. It was in pretty good shape, but two great challenges had to be addressed:
 
