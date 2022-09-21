@@ -12,7 +12,7 @@ menu_settings:
       url: '/'
     - title: 'About'
       url: '/about'
-    - title: 'CV ↗'
+    - title: 'CV &#x2197;&#xFE0E;'
       url: 'https://www.dropbox.com/s/fy771irttz55ceu/felipe-resume.pdf?dl=0'
 
 footer_settings:
