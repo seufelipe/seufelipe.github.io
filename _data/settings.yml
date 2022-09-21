@@ -73,9 +73,7 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap" rel="stylesheet">'
+  font_embed: ''
   title_font: '"Albert Sans", sans-serif'
   body_font: '"Albert Sans", sans-serif'
   regular_weight: 500
