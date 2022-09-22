@@ -2,15 +2,11 @@
 layout: default
 overtitle: Hi. My name is Felipe
 title: I am a Generalist Designer
-description: I have more than 10 years of experience in the field of UX and Product Design
+description: I have more than 10 years of experience in the field of UX and Product Design *
 featured_image: /images/social.jpg
 ---
 
 <div class="page-home">
-
-	{% if site.data.settings.hero_settings.background_image %}
-	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
-	{% endif %}
 
 	<section class="hero">
 		<div class="wrap grid">
@@ -30,23 +26,20 @@ featured_image: /images/social.jpg
 
 			{% for project in site.projects reversed %}
 
-			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
-
 			<article class="project__preview">
-				<h3 class="project__title"><a href="{{ project.url | relative_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h3>
+				<h2 class="project__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
 
-				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+				<div class="project__images owl-carousel">
 					{% for image in project.gallery_images %}
 					<a href="{{ project.url | relative_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="{{ project.title }}" class="project__image"></a>
 					{% endfor %}
 				</div>
 
-				<div class="project__content grid" style="border-color: {{ accent_color }}">
+				<div class="project__content grid">
 					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
 					<p class="project__description">
 						{{ project.description }}
-						<a href="{{ project.url | relative_url }}" class="project__link button--text --right"
-							style="color: {{ accent_color }}; --color-var: {{ accent_color }}">View case study &rarr;</a>
+						<a href="{{ project.url | relative_url }}" class="project__link button--text" title="Read more about {{ project.title }}">View case study &rarr;</a>
 					</p>
 				</div>
 			</article>
