@@ -12,6 +12,8 @@ menu_settings:
       url: '/'
     - title: 'About'
       url: '/about'
+    - title: 'Linklog &#x2197;&#xFE0E;'
+      url: 'https://pinboard.in/u:seufelipe/public/'
     - title: 'CV &#x2197;&#xFE0E;'
       url: 'https://www.dropbox.com/s/fy771irttz55ceu/felipe-resume.pdf?dl=0'
 
