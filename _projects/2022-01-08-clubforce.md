@@ -8,7 +8,7 @@ gallery_images:
   - clubforce01.png
 ---
 
-Clubforce is a sports club management platform for memberships, fundraising, communications and promotion. They are a market leader, with over 10 years history. Built for volunteers, by volunteers.
+Clubforce is a sports club management platform. They provide memberships, fundraising, communications and promotion tools for over 2000 clubs across 35 countries. They are a market leader, with over 10 years history. Built for volunteers, by volunteers.
 
 I joined the company as First Designer, to work on the next generation of the platform: Clubforce Modernisation (or simply "CM"). During my time there, I was involved on Everything Design: from collaborating with managers on user stories and backlog refinement, to building and presenting prototypes to different stakeholders, to developer hand-off.
 
