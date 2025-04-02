@@ -12,10 +12,8 @@ menu_settings:
       url: '/'
     - title: 'About'
       url: '/about'
-    - title: 'Linklog &#x2197;&#xFE0E;'
-      url: 'https://pinboard.in/u:seufelipe/public/'
-    - title: 'CV &#x2197;&#xFE0E;'
-      url: 'https://www.dropbox.com/s/fy771irttz55ceu/felipe-resume.pdf?dl=0'
+    - title: 'Blog &#x2197;&#xFE0E;'
+      url: 'https://seufelipe.blog'
 
 footer_settings:
   logo_image:
@@ -39,7 +37,7 @@ social_settings:
   facebook_url: ''
   linkedin_url: 'https://www.linkedin.com/in/seufelipe/'
   github_url: 'https://github.com/seufelipe'
-  twitter_url: 'https://twitter.com/seufelipe/'
+  bluesky_url: 'https://bsky.app/profile/seufelipe.bsky.social'
   instagram_url: ''
   letterboxd_url: 'https://letterboxd.com/seufelipe/'
   snapchat_url: ''
